@@ -1,0 +1,158 @@
+.header{
+    background-color: red;
+    color: #fff;
+    padding: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.round-img{
+    border-radius: 50%;
+}
+.btn{
+    background-color: red;
+    padding: 4px 20px;
+    color: #fff;
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+}
+
+
+
+  .middle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .bar {
+    width: 10px;
+    height: 70px;
+    background: #fff;
+    display: inline-block;
+    transform-origin: bottom center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    /*   box-shadow:5px 10px 20px inset rgba(255,23,25.2); */
+    animation: loader 1.2s linear infinite;
+  }
+  .bar1 {
+    animation-delay: 0.1s;
+  }
+  .bar2 {
+    animation-delay: 0.2s;
+  }
+  .bar3 {
+    animation-delay: 0.3s;
+  }
+  .bar4 {
+    animation-delay: 0.4s;
+  }
+  .bar5 {
+    animation-delay: 0.5s;
+  }
+  .bar6 {
+    animation-delay: 0.6s;
+  }
+  .bar7 {
+    animation-delay: 0.7s;
+  }
+  .bar8 {
+    animation-delay: 0.8s;
+  }
+  
+  @keyframes loader {
+    0% {
+      transform: scaleY(0.1);
+  
+    }
+    50% {
+      transform: scaleY(1);
+      background: yellowgreen;
+    }
+    100% {
+      transform: scaleY(0.1);
+      background: transparent;
+    }
+  }
+  .search-field{
+    display: block;
+    width: 95%;
+    margin: 20px auto;
+    padding: 12px;
+  }
+  .search-btn{
+      display: block;
+      width: 95%;
+      margin: 20px auto;
+      padding: 12px;
+      background-color: red;
+      outline: 0;
+      border: 0;
+      color: #fff;
+  }
+  @media (max-width:992px)
+   {
+    .github-user-box{
+        grid-template-columns: 1fr 1fr !important;
+    }
+  }
+  @media (max-width:576px)
+  {
+   .github-user-box{
+       grid-template-columns: 1fr !important;
+   }
+ }
+.navbar-item{
+    display: inline;
+    padding: 0 10px;
+}
+.navbar-link{
+    text-decoration: none;
+    color: #fff;
+}
+.badge{
+  margin: 20px;
+}
+.badge-primary{
+background-color: yellowgreen;
+padding: 12px;
+color: #fff;
+}
+.badge-success{
+  background-color:firebrick;
+padding: 12px;
+color: #fff;
+
+}
+.badge-light{
+  background-color:darkgoldenrod;
+  padding: 12px;
+  color: #fff;
+}
+.badge-dark{
+  background-color:#000;
+  padding: 12px;
+  color: #fff;
+}
+.text-center-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width:768px) {
+  .text-center-btn{
+ 
+    flex-direction: column;
+  }
+  
+}
